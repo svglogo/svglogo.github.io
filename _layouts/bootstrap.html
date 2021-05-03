@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" class="h-100">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Bootstrap CSS -->
+    {{ site.bootstrap-css }}
+    {{ site.bootstrap-icons }}
+    <!-- local CSS -->
+    {{ site.local-css }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body class="d-flex h-100">
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+        <div class="">
+            {%- include nav.html -%}
+        </div>
+        <div class="px-2 text-center">
+            {{ content }}
+        </div>
+        <div class="mt-auto">
+            {%- include footer.html -%}
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- {{ site.bootstrap-js-1 }} -->
+    <!-- {{ site.bootstrap-js-2 }} -->
+    <script src="/sidebar.js"></script>
+  </body>
+</html>
